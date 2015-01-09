@@ -2,7 +2,7 @@
 
 EmberRailsBlog.Router.map(function() {
 	this.resource('home', {path: '/'});
-	this.resource('navbar', function(){
+	// this.resource('navbar', function(){
 	  this.resource('posts');
 	})
 });
