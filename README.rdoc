@@ -1,2 +1,3 @@
 ## Ember-Rails-Blog
+=====================
 In this blog I will be incorporating a back-end for data persistance to my previous blog that was built without using ember-data. The work in this repo is mainly establishing Rails as the JSON API for our database.
