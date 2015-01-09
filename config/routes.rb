@@ -1,4 +1,6 @@
 EmberRailsBlog::Application.routes.draw do
+  resources :projects
+
   resources :posts
 
   root :to => 'assets#index'
