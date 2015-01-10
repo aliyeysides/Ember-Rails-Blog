@@ -1,11 +1,39 @@
-{{#link-to 'posts'}}posts{{/link-to}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ali Yeysides</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.7/basscss.min.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
 
-<div style="width: 600px; border: 6px solid #eee; margin: 0 auto; padding: 20px; text-align: center; font-family: sans-serif;">
-  <img src="http://emberjs.com/images/about/ember-productivity-sm.png" style="display: block; margin: 0 auto;">
-  <h1>Welcome to Ember.js!</h1>
-  <p>You're running an Ember.js app on top of Ruby on Rails. To get started, replace this content
-  (inside <code>app/assets/javascripts/templates/index.js.handlebars</code>) with your application's
-  HTML.</p>
-</div>
+    <div class="clearfix">
+      <div class="sm-col sm-col-6 md-col-5 lg-col-3 px2 border-right center nav-bar">
+      <img class="circle py2" height="50%" width="50%" src="assets/ali.jpg"/>
+        {{#link-to 'index' class="header"}}<h1>Ali Yeysides</h1>{{/link-to}}
+        <p class="italic">Full-Stack Web Developer</p>
+        {{#link-to 'posts' tagName="button" class="button-blue-outline mb1"}}Writing{{/link-to}}
+        {{#link-to 'projects' tagName="button" class="button-blue-outline mb1"}}Projects{{/link-to}}
+        <div class="py3">
+          <a target="_blank" href="mailto:ali.yeysides@gmail.com"><i class="fa fa-paper-plane-o fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://www.github.com/aliyeysides"><i class="fa fa-github-alt fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/profile/view?id=235379385&trk=spm_pic"><i class="fa fa-linkedin-square fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://twitter.com/aliyeysides"><i class="fa fa-twitter fa-2x blue p1 float"></i></a>
+        </div>
+      </div>
+      <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2 py1">
+        {{outlet}}
+      </div>
+    </div>
 
-{{outlet}}
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v2.0.0.js"></script>
+  <script src="js/libs/ember-1.9.0.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>
