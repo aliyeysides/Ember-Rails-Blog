@@ -1,3 +1,3 @@
 class ProjectSerializer < ApplicationSerializer
-  attributes :id
+  attributes :id, :name, :description, :imgUrl, :deployUrl
 end
