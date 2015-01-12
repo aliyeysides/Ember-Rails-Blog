@@ -5,5 +5,6 @@ EmberRailsBlog.Router.map(function() {
 	  this.resource('posts');
   	this.resource('post', {path: '/:title'})
 	  this.resource('projects');
+	  this.resource('project', {path: '/:name'})
 	})
 });
