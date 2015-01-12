@@ -2,7 +2,7 @@
 
 <p>Your content here.</p>
 {{#each}}
-	<li>{{title}}</li>
+	<li>{{#link-to 'post' this}}{{title}}{{/link-to}}</li>
 {{/each}}
 
 {{outlet}}
