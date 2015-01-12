@@ -2,6 +2,6 @@
 
 EmberRailsBlog.ProjectsRoute = Ember.Route.extend({
 	model: function(){
-		this.store.find('project');
+		return this.store.find('project');
 	}
 });
