@@ -1,9 +1,17 @@
-<h1>Projects</h1>
+<h1 class="center caps border-bottom blue">Projects</h1>
 
-<p>Your content here.</p>
-{{#each}}
-	<li>{{#link-to 'project' this }}{{name}}{{/link-to}}</li>
-{{/each}}
+	{{#each}}
+    <h3 class="center caps dark-gray">{{name}}</h3>
+    <div class="clearfix mb2 border-bottom">
+      <div>
+        <center><img {{bind-attr src=imgUrl}}/></center>
+      </div>
+      <div class="overflow-hidden">
+      <p>{{description}}</p>
+      <a target="_blank" {{bind-attr href=deployUrl}}>View this Project</a>
+      </div>
+    </div>
+  {{/each}}
 
 
 {{outlet}}
