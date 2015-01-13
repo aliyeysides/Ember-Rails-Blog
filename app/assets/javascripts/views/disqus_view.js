@@ -15,7 +15,7 @@ EmberRailsBlog.DisqusView = Ember.View.extend({
       });
     } else {
       window.disqus_shortname = 'aliyeysides';
-      window.disqus_identifier = this.get('post.id');
+      window.disqus_identifier = this.get('post.title');
       window.disqus_url = window.location.toString();
       window.disqus_title = this.get('post.title');
       var dsq = document.createElement('script');
