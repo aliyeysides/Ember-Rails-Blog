@@ -6,7 +6,7 @@
  <button {{action 'doneEditing'}}>Done</button>
 {{else}}
 	<button {{action 'edit'}}>Edit</button>
-
+{{/if}}
 
 {{! controller.content is the post I care about }}
 {{view EmberRailsBlog.DisqusView postBinding="post"}}
