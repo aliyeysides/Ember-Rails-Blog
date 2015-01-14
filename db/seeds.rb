@@ -13,6 +13,12 @@ Project.create(
 	deployUrl: "https://chrome.google.com/webstore/detail/pinpoint/khcfpddiephakfkdhfnbbdihopbdopam"
 	);
 Project.create(
+	name: "ClickCall",
+	description: "TNW AllyNYC 2014 hackathon submission. ClickCall is a chrome extension that allows users to place phone calls with their browser. Click call turns all numbers on a page to a clickable link that you can simply click and dial. The phone call can then be made using your computer's microphone and speakers. Built with Javascript, jQuery, Chrome extension API, and Sinch API.",
+	imgUrl: "assets/clickcall.png",
+	deployUrl: "https://github.com/aliyeysides/click_call"
+	)
+Project.create(
 	name: "LiveHub",
 	description: "LiveHub is a social medium for musicians. Users can rate and review artists based on their past performances. Built with Ruby on Rails, jQuery, AJAX, Travis CI, Paperclip, RSpec, FactoryGirl, ActiveRecord, and Bootstrap.",
 	imgUrl: "assets/livehub.png",
