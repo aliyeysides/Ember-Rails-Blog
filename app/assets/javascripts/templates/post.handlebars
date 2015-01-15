@@ -1,12 +1,14 @@
-<h2>{{title}}</h2>
-<p>{{body}}</p>
-
 {{#if isEditing}}
- {{partial 'post/edit'}}
+	<p>{{input type="text" value=title}}</p>
+	<p>{{textarea value=body}}</p>
  <button {{action 'doneEditing'}}>Done</button>
 {{else}}
 	<button {{action 'edit'}}>Edit</button>
 {{/if}}
 
+<h2>{{title}}</h2>
+<p>{{body}}</p>
+
+
 {{! controller.content is the post I care about }}
-{{view EmberRailsBlog.DisqusView postBinding="post"}}
+{{view EmberRailsBlog.DisqusView contentBinding='post'}}
