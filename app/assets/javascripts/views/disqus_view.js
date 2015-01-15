@@ -1,7 +1,6 @@
 EmberRailsBlog.DisqusView = Ember.View.extend({
   elementId: 'disqus_thread',
   tagName: 'div',
-  // console.log("first", this.get('post'));
   didInsertElement: function () {
     if (window.DISQUS) { // Simply reload disqus
       var id = this.get('post.id'),
@@ -15,6 +14,7 @@ EmberRailsBlog.DisqusView = Ember.View.extend({
         }
       });
     } else {
+      console.log("this", this.get('post'));
       window.disqus_shortname = 'aliyeysides';
       window.disqus_identifier = this.get('post.id');
       window.disqus_url = window.location.toString();
