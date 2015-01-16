@@ -38,7 +38,8 @@ Project.create(
 	deployUrl: 'http://wizardworld.herokuapp.com/'
 	);
 
-markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+renderer = Redcarpet::Render::HTML.new(prettify: true, hard_wrap: true)
+markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
 # Blog Posts
 Post.create(
