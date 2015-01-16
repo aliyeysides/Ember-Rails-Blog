@@ -1,8 +1,8 @@
-# test
-## test
-*test*
-```
-def code
- puts bar
-end
-```
+***
+Shereef's hour long fireside chat was informative as it was motivating, which was definitely something I needed. With the commitment mounting up and the material beginning to pick up speed, Shereef underlined the importance of taking this program seriously and highlighted the mindset and questions we should have coming into Dev Bootcamp. I knew it was going to be a challenge, but I also had a lot of preconceived notions that it would take a good amount of raw talent and intelligence which worried me about how I'd fit in. 
+
+
+I was never concerned with fitting in regards to culture seeing as how I've been working in a similar industry and had a background in computer hardware prior to entering DBC. I was afraid I was going to be a slow learner and drag people behind. Shereef really cleared this up for me. He made it very clear that raw intelligence, clearly an overrated term, had little to nothing to do with learning to be a software engineer, and that it takes an undying commitment and a starving eagerness to learn and build to really succeed in this program. I see myself thriving in this type of environment where I get to take control of my own education and learn by doing and asking when I make mistakes. And, the fact that saying 'I don't know' is encouraged at DBC brings me a sense of comfort. 
+
+
+My expectations of DBC are definitely much higher now because I know they ask the same of me. I want to succeed because they truely want me to succeed. I never had an oppurtunity to receive this type of support and education. I am so excited for the program to begin, although the prep phase is a lot of work already, I can't wait to forge new relationships with my mentors, classmates, and most importantely, to learn.
