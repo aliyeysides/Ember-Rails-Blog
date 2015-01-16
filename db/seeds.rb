@@ -38,6 +38,8 @@ Project.create(
 	deployUrl: 'http://wizardworld.herokuapp.com/'
 	);
 
+markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+
 # Blog Posts
 Post.create(
 	title: "Websites to always keep up in your browser:",
@@ -49,5 +51,5 @@ Post.create(
 	)
 Post.create(
 	title: "Markdown",
-	body: File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read)
 	)
