@@ -9,5 +9,3 @@
 EmberRailsBlog = Ember.Application.create({
 	LOG_TRANSITIONS: true
 });
-
-// EmberRailsBlog.ApplicationAdapter = DS.RESTAdapter;

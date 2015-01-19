@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 # Projects
 Project.create(
 	name: "PinPoint",
@@ -45,13 +37,16 @@ markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 # Blog Posts
 Post.create(
 	title: "Websites to always keep up in your browser:",
-	body: ""
+	body: "markdown.render(File.open().read)",
+	date: ""
 	)
 Post.create(
 	title: "",
-	body: ""
+	body: "markdown.render(File.open().read)",
+	date: ""
 	)
 Post.create(
 	title: "My Reaction to Shereef's Fireside Chat",
-	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read)
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read),
+	date: ""
 	)
