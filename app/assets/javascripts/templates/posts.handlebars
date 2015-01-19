@@ -1,11 +1,10 @@
 <h1 class="center caps border-bottom blue">Writing</h1>
 
     {{#each}}
-      <li>
-        <h2>{{#link-to 'post' this class="dark-gray article"}}{{title}}{{/link-to}}
-        </h2>
+      <li class="post">
+        <h2>{{#link-to 'post' this class="dark-gray article"}}{{title}}{{/link-to}}</h2>
         <div class="article-details mid-gray">
-          <li>{{date}}</li>
+          <li class="post blue">{{date}}</li>
         </div>
       </li>
     {{/each}}

@@ -23,7 +23,7 @@ array.map {|x| x >= 2}
 returns [false, true, true]
 ```
 
-Wait, what happened here? We iterated over all the elements of array and said we want x if it's greater than or equal to 2. Weren't we supposed to get [2,3] as a return? Well, no. Map gathers all elements to modify them. In this case, we are not modifying the elements of the array, we are simply saying we want only the elements that equate to true when passed. This is what .select is for.
+Wait, what happened here? We iterated over all the elements of array and said we want `x` if it's greater than or equal to `2`. Weren't we supposed to get `[2,3]` as a return? Well, no. Map gathers all elements to modify them. In this case, we are not modifying the elements of the array, we are simply saying we want only the elements that equate to true when passed. This is what `.select` is for.
 ## Enumerable#Select
 
 So let's take the previous example and try it with select:
@@ -36,4 +36,4 @@ returns [2,3]
 but array still equals [1,2,3]
 ```
 
-What select does is iterate over each element like we did with map, but returns a collection for which the given block, x >= 2, returns a true value. Just like map, this returns the new values but does not change the underlying collection.
+What select does is iterate over each element like we did with map, but returns a collection for which the given block, `x >= 2`, returns a true value. Just like map, this returns the new values but does not change the underlying collection.
