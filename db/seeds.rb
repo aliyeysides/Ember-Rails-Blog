@@ -41,12 +41,12 @@ Post.create(
 	date: ""
 	)
 Post.create(
-	title: "",
-	body: "markdown.render(File.open().read)",
-	date: ""
+	title: "SQL Injection Hacking",
+	body: markdown.render(File.open(app/assets/blog_posts/2014-09-21_sql_injection_hacking.md).read),
+	date: "Sep. 21st, 2014"
 	)
 Post.create(
 	title: "My Reaction to Shereef's Fireside Chat",
 	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read),
-	date: ""
+	date: "Aug 9th, 2014"
 	)
