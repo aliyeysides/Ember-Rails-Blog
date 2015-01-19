@@ -1,3 +1,4 @@
+	***
 	There are several ways to iterate over elements in Ruby and it's best to get to know which ones to use along with the proper practices. The following are two different methods that I use frequently to get the job done.
 	
 	## Enumberable#Map
@@ -45,4 +46,3 @@
 
 
 	What select does is iterate over each element like we did with map, but returns a collection for which the given block, x >= 2, returns a true value. Just like map, this returns the new values but does not change the underlying collection.
-	Aug 30th, 2014

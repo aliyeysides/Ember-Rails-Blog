@@ -31,7 +31,7 @@ Project.create(
 	);
 
 # RedCarpet Markdown Parser
-renderer = Redcarpet::Render::HTML.new(prettify: true, hard_wrap: true)
+renderer = Redcarpet::Render::HTML.new(hard_wrap: true)
 markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
 # Blog Posts
@@ -42,7 +42,7 @@ Post.create(
 	)
 Post.create(
 	title: "Enumerables in Ruby and their practices",
-	body: markdown.render(File.open("app/assets/blog_posts/2014-08-30_Enumerables").read),
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-30_Enumerables.md").read),
 	date: "Aug 30th, 2014"
 	)
 Post.create(
