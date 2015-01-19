@@ -1,3 +1,3 @@
 class PostSerializer < ApplicationSerializer
-  attributes :id, :title, :body
+  attributes :id, :title, :body, :date, :created_at
 end

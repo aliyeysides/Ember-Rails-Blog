@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 # Projects
 Project.create(
 	name: "PinPoint",
@@ -29,7 +21,7 @@ Project.create(
 	name: "BeaxIt",
 	description: "BeaxIt allows you to search your favorite artists and create playlists. Built with Sinatra, Javascript, jQuery, AJAX, iTunes API, ActiveRecord, and Bootstrap.", 
 	imgUrl: "assets/beaxit.png",
-	deployUrl: "https://chrome.google.com/webstore/detail/pinpoint/khcfpddiephakfkdhfnbbdihopbdopam"
+	deployUrl: "http://beaxit.herokuapp.com/"
 	);
 Project.create(
 	name: "Super-Working-Title",
@@ -38,18 +30,23 @@ Project.create(
 	deployUrl: 'http://wizardworld.herokuapp.com/'
 	);
 
-markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+# RedCarpet Markdown Parser
+renderer = Redcarpet::Render::HTML.new(hard_wrap: true)
+markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
 # Blog Posts
 Post.create(
-	title: "Websites to always keep up in your browser:",
-	body: "sdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA"
+	title: "SQL Injection Hacking",
+	body: markdown.render(File.open("app/assets/blog_posts/2014-09-21_sql_injection_hacking.md").read),
+	date: "Sep. 21st, 2014"
+	)
+Post.create(
+	title: "Enumerables in Ruby and their practices",
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-30_Enumerables.md").read),
+	date: "Aug 30th, 2014"
 	)
 Post.create(
 	title: "My Reaction to Shereef's Fireside Chat",
-	body: "Shereef's hour long fireside chat was informative as it was motivating, which was definitely something I needed. With the commitment mounting up and the material beginning to pick up speed, Shereef underlined the importance of taking this program seriously and highlighted the mindset and questions we should have coming into DBC. I knew from the beginning it was going to be a challenge, but I also had a lot of preconceived notions that it would take a good amount of raw talent and intelligence, which worried me about how I'd fit in. I was never concerned with the how I'd fit regarding the culture, as I've been working in a similar industry and had a background in computer hardware prior to entering DBC, however, I was afraid I was going to be a slow learner and drag people behind. Shereef really cleared this up for me. He made it very clear that raw intelligence, clearly an overrated term, had little to nothing to do with learning to be a software engineer, and that it takes an undying commitment and a starving eagerness to learn and build to really succeed in this program. I see myself thriving in this type of environment where I get to take control of my own education and learn by doing and asking when I make mistakes. And, the fact that saying 'I don't know' is encouraged brings me a sense of comfort. My expectations of DBC are definitely much higher now because I know they ask the same of me. I want to succeed because they truely want me to succeed. I never had an oppurtunity to receive this type of support and education and I will not mess this up. I am so excited for the program to begin, although the prep phase is a lot of work already, I can't wait to forge new relationships with my mentors and classmates, and most importantely, to learn."
-	)
-Post.create(
-	title: "Markdown",
-	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read)
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-09_My_Reaction_to_Shereefs_Fireside_Chat.md").read),
+	date: "Aug 9th, 2014"
 	)
