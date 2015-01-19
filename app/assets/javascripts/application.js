@@ -6,5 +6,6 @@
 //= require ./ember_rails_blog
 
 // for more details see: http://emberjs.com/guides/application/
-EmberRailsBlog = Ember.Application.create();
-
+EmberRailsBlog = Ember.Application.create({
+	LOG_TRANSITIONS: true
+});

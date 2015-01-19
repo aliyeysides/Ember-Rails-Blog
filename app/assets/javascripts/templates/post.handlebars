@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<p class="blue">{{date}}</p>
+<p>{{safe-html body}}</p>
+
+
+{{! controller.content is the post I care about }}
+{{ view EmberRailsBlog.DisqusView postBinding="controller.model"}}
