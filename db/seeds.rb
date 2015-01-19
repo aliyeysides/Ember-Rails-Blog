@@ -21,7 +21,7 @@ Project.create(
 	name: "BeaxIt",
 	description: "BeaxIt allows you to search your favorite artists and create playlists. Built with Sinatra, Javascript, jQuery, AJAX, iTunes API, ActiveRecord, and Bootstrap.", 
 	imgUrl: "assets/beaxit.png",
-	deployUrl: "http://www.beaxit.herokuapp.com"
+	deployUrl: "http://beaxit.herokuapp.com/"
 	);
 Project.create(
 	name: "Super-Working-Title",
@@ -36,14 +36,14 @@ markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
 # Blog Posts
 Post.create(
-	title: "",
-	body: "markdown.render(File.open().read)",
-	date: ""
-	)
-Post.create(
 	title: "SQL Injection Hacking",
 	body: markdown.render(File.open("app/assets/blog_posts/2014-09-21_sql_injection_hacking.md").read),
 	date: "Sep. 21st, 2014"
+	)
+Post.create(
+	title: "Enumerables in Ruby and their practices",
+	body: markdown.render(File.open("app/assets/blog_posts/2014-08-30_Enumerables").read),
+	date: "Aug 30th, 2014"
 	)
 Post.create(
 	title: "My Reaction to Shereef's Fireside Chat",

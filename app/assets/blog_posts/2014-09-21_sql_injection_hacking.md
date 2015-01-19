@@ -1,8 +1,9 @@
+***
 SQL injection is a hacking technique that uses sql queries to trick and identify important information within an applications database. Injected SQL commands can alter SQL statements and compromise the security of a web application. When a site has a search bar or a field to enter a user id or email or even password, it will typically have a sql server code that enters your input such as this:
 
-```
 input = text text text
 
+```
 SELECT * FROM users
 WHERE userID = “text text text“;
 ```
