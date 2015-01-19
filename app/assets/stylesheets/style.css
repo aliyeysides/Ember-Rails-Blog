@@ -50,3 +50,7 @@ h1 h2 h3 {
 .article-details {
 	margin-top: -15px !important;
 }
+
+.orange {
+  color: orange;
+}
