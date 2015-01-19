@@ -21,7 +21,7 @@ Project.create(
 	name: "BeaxIt",
 	description: "BeaxIt allows you to search your favorite artists and create playlists. Built with Sinatra, Javascript, jQuery, AJAX, iTunes API, ActiveRecord, and Bootstrap.", 
 	imgUrl: "assets/beaxit.png",
-	deployUrl: "https://www.beaxit.herokuapp.com"
+	deployUrl: "http://www.beaxit.herokuapp.com"
 	);
 Project.create(
 	name: "Super-Working-Title",
