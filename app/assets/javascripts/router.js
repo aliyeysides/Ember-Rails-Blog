@@ -5,9 +5,7 @@ EmberRailsBlog.Router.map(function() {
 	this.route('index', function(){
 	  this.resource('posts', {path: '/posts'});
   	this.resource('post', {path: 'posts/:title'});
-	  this.resource('projects', {path: '/projects'}, function(){
-		  this.resource('project', {path: '/:name'})
-		});
+	  this.resource('projects', {path: '/projects'});
 	});
 });
  
