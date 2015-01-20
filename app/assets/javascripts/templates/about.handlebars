@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ali Yeysides</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.7/basscss.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="clearfix">
+      <div class="sm-col sm-col-5 md-col-4 lg-col-3 px2 border-right center nav-bar">
+      <img class="circle py2" height="50%" width="50%" src="assets/ali.jpg"/>
+        {{#link-to 'about' class="header"}}<h1>Ali Yeysides</h1>{{/link-to}}
+        <p class="italic">Full-Stack Web Developer</p>
+        {{#link-to 'posts' tagName="button" class="button-blue-outline mb1"}}Writing{{/link-to}}
+        {{#link-to 'projects' tagName="button" class="button-blue-outline mb1"}}Projects{{/link-to}}
+        <div class="py3">
+          <a target="_blank" href="mailto:ali.yeysides@gmail.com"><i class="fa fa-paper-plane-o fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://www.github.com/aliyeysides"><i class="fa fa-github-alt fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/profile/view?id=235379385&trk=spm_pic"><i class="fa fa-linkedin-square fa-2x blue p1 float"></i></a>
+          <a target="_blank" href="https://twitter.com/aliyeysides"><i class="fa fa-twitter fa-2x blue p1 float"></i></a>
+        </div>
+      </div>
+      <div class="sm-col sm-col-6 md-col-7 lg-col-8 px2 py1 mx-auto">
+        <h1 class="mid-gray">Hello, my name is <a target="_blank" href="https://www.google.com/webhp?tab=ww&ei=NjK9VIffMYWrggTGsoSwAw&ved=0CAkQ1S4#q=ali+yeysides">Ali Yeysides</a>. I'm a full-stack web developer specializing in <span class="red">Ruby on Rails</span> app development. I'm a <a target="_blank" href="http://devbootcamp.com/">Dev Bootcamp</a> alum and I love to <a target="_blank" href="https://github.com/aliyeysides"><span class="purple">code</span></a>. My favorite things in the world are <a target="_blank" href="http://steamcommunity.com/id/yeysides"><span class="dark-gray" >steam</span></a> and good <a target="_blank" href="http://i.imgur.com/7Hbn3Ip.gif"><span class="green">gifs</span></a>. This blog was built with <span class="orange">{Ember.js & Rails}</span>.</h1>
+      </div>
+    </div>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v2.0.0.js"></script>
+  <script src="js/libs/ember-1.9.0.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>
