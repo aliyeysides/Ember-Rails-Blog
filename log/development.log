@@ -646,3 +646,297 @@ Started GET "/assets/ember-data.js?body=1" for 127.0.0.1 at 2015-01-20 13:26:39 
 
 
 Started GET "/assets/ali.jpg" for 127.0.0.1 at 2015-01-20 13:26:39 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AssetsController#index as HTML
+  Rendered assets/index.html.erb (48.2ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/ember.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/ember-data.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/adapters/application_adapter.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/models/post.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/views/disqus_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/views/post_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/views/posts_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/views/projects_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/helpers/markdown_helper.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/templates/about.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/templates/components/post-edit.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:00 -0500
+
+
+Started GET "/assets/templates/post.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/templates/posts.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/templates/project.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/templates/projects.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/routes/about_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/routes/post_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/routes/posts_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/routes/project_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/routes/projects_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/ember_rails_blog.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/assets/ali.jpg" for 127.0.0.1 at 2015-01-20 13:39:01 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-20 13:39:02 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+DEPRECATION WARNING: ** Notice: embed is deprecated. **
+The use of .embed method on a Serializer will be soon removed, as this should have a global scope and not a class scope.
+Please use the global .setup method instead:
+ActiveModel::Serializer.setup do |config|
+  config.embed = :ids
+  config.embed_in_root = true
+end
+ (called from embed at /var/lib/gems/1.9.1/gems/active_model_serializers-0.9.2/lib/active_model/serializer.rb:42)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+Processing by ProjectsController#index as JSON
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/pinpoint.png" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+
+
+Started GET "/assets/clickcall.png" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+
+
+Started GET "/assets/livehub.png" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+
+
+Started GET "/assets/beaxit.png" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+
+
+Started GET "/assets/swt.png" for 127.0.0.1 at 2015-01-20 13:39:03 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-20 13:39:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AssetsController#index as HTML
+  Rendered assets/index.html.erb (189.2ms)
+Completed 200 OK in 218ms (Views: 218.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+Processing by AssetsController#index as HTML
+  Rendered assets/index.html.erb (48.8ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/handlebars.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/ember.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/ember-data.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/adapters/application_adapter.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/models/post.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/models/project.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/views/post_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/views/disqus_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/views/posts_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/views/project_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/views/projects_view.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/helpers/markdown_helper.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/about.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/components/post-edit.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/post.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/posts.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/projects.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/templates/project.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/routes/about_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/routes/post_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/routes/posts_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/routes/project_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/routes/projects_route.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/ember_rails_blog.js?body=1" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/assets/ali.jpg" for 127.0.0.1 at 2015-01-20 13:39:43 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+DEPRECATION WARNING: ** Notice: embed is deprecated. **
+The use of .embed method on a Serializer will be soon removed, as this should have a global scope and not a class scope.
+Please use the global .setup method instead:
+ActiveModel::Serializer.setup do |config|
+  config.embed = :ids
+  config.embed_in_root = true
+end
+ (called from embed at /var/lib/gems/1.9.1/gems/active_model_serializers-0.9.2/lib/active_model/serializer.rb:42)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+Processing by ProjectsController#index as JSON
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/pinpoint.png" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+
+
+Started GET "/assets/clickcall.png" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+
+
+Started GET "/assets/livehub.png" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+
+
+Started GET "/assets/swt.png" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+
+
+Started GET "/assets/beaxit.png" for 127.0.0.1 at 2015-01-20 13:39:45 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-01-20 13:39:46 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
